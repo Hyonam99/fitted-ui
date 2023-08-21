@@ -1,0 +1,10 @@
+@import '../../base-style';
+
+.dashboard-container {
+    background-image: url('../../assets/Images/hand_one_finger.svg'), url('../../assets/Images/hand_rock.svg');
+    background-position: right top, right bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 180px, 180px;
+    min-height: 120vh;
+    padding: 3rem;
+}

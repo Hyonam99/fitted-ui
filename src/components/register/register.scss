@@ -1,0 +1,56 @@
+@import '../../base-style';
+
+.register-container {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    min-height: 70dvh;
+
+    .register-container_header {
+        text-align: center;
+        h3 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    }
+
+    .register-container_content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .register-container_content-form {
+            padding: 1rem;
+            form {
+                display: flex;
+                flex-direction: column;
+                gap: .8rem;
+
+                .content-form_input-group {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 1rem;
+                }
+
+                .inputs-holder {
+                    small {
+                        color: red;
+                    }
+                }
+                
+                .submit-button {
+                    background: #b7076b;
+                    color: white;
+                    font-size: 14px;
+                    width: 50%;
+
+                    &:disabled {
+                        background: #d46aa6 !important;
+                        pointer-events: none;
+                        cursor: default;
+                    }
+                }
+            }
+
+        }
+    }
+}

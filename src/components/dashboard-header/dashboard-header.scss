@@ -1,0 +1,34 @@
+@import '../../base-style';
+
+.dashboard-header {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-content: center;
+    background: white;
+    padding: 1rem;
+    border-radius: 10px;
+    // box-shadow: 0 -50px 2px 18px blue ;
+
+    .dashboard-header_profile {
+        display: flex;
+        align-items: flex-start;
+        gap: .6rem;
+        padding: 0 .6rem;
+        border-right: 1px solid grey;
+
+        .dashboard-header_profile-bio {
+            .dashboard-header_profile-bio_contents {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: .4rem;
+            }
+        }
+    }
+
+    .dashboard-header_contact {
+        display: flex;
+        align-items: center;
+        gap: .6rem;
+        padding: 0 1rem;
+    }
+}

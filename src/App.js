@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import { SideNav, TopHeader } from 'components/components-export';
+import './App.scss';
+import Dashboard from 'pages/dashboard/Dashboard';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="fitted-app">
+		<main>
+			<section className='fitted-app_side-nav'>
+				<SideNav />
+			</section>
+			<section className='fitted-main-section'>
+				<header><TopHeader /></header>
+				<section className='fitted-main-section_display-content'><Dashboard /></section>
+			</section>
+		</main>
+    </section>
   );
 }
 

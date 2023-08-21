@@ -1,0 +1,19 @@
+@import '../../base-style';
+
+.top-header_container {
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .top-header_indicator,
+    .top-header_notification {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.custom-avatar-header {
+    box-shadow: 0px 0px 2px 2px rgb(21, 87, 209);
+}
